@@ -1,0 +1,20 @@
+size=64 ,1000 steps
+1 core- 0.023s
+2 cores-0.013s
+4 cores-0.01s
+6 cores- 0.009s
+8 cores-0.008s
+
+size=1024,steps=1000
+1 core-11s
+2 cores-5.47s
+4 cores-2.72s
+6 cores- 1.82s
+8 cores -1.37s 
+
+size=4096 ,steps=1000
+1 core- 176s
+2 cores- 88s 
+4 cores- 44s
+6 cores-36s
+8 cores-36s

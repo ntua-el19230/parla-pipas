@@ -8,7 +8,7 @@
 #PBS -e Bleona.err
 
 ## How many machines should we get? 
-#PBS -l nodes=1:ppn=1
+#PBS -l nodes=1:ppn=8
 
 ##How long should the job run for?
 #PBS -l walltime=00:10:00
@@ -18,6 +18,6 @@
 
 module load openmp
 cd /home/parallel/parlab19/pps/a1
-export OMP_NUM_THREADS=1
-./a.out 64 1000
+export OMP_NUM_THREADS=8
+./a.out 4096 1000
 
