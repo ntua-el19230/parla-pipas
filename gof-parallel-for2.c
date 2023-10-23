@@ -2,13 +2,13 @@
  ************* Conway's game of life ******************
  ******************************************************
 
-Usage: ./exec ArraySize TimeSteps                   
+ Usage: ./exec ArraySize TimeSteps                   
 
-Compile with -DOUTPUT to print output in output.gif 
-(You will need ImageMagick for that - Install with
-sudo apt-get install imagemagick)
-WARNING: Do not print output for large array sizes!
-or multiple time steps!
+ Compile with -DOUTPUT to print output in output.gif 
+ (You will need ImageMagick for that - Install with
+ sudo apt-get install imagemagick)
+ WARNING: Do not print output for large array sizes!
+ or multiple time steps!
  ******************************************************/
 
 
@@ -18,7 +18,7 @@ or multiple time steps!
 #include <omp.h>
 
 #define FINALIZE "\
-	convert -delay 20 `ls -1 out*.pgm | sort -V` output.gif\n\
+convert -delay 20 `ls -1 out*.pgm | sort -V` output.gif\n\
 rm *pgm\n\
 "
 
@@ -33,7 +33,6 @@ int main (int argc, char * argv[]) {
 	int ** current, ** previous; 	//arrays - one for current timestep, one for previous timestep
 	int ** swap;			//array pointer
 	int t, i, j, nbrs;		//helper variables
-	int nthreads, tid;
 
 	double time;			//variables for timing
 	struct timeval ts,tf;
@@ -54,47 +53,35 @@ int main (int argc, char * argv[]) {
 
 	init_random(previous, current, N);	//initialize previous array with pattern
 
-#ifdef OUTPUT
+	#ifdef OUTPUT
 	print_to_pgm(previous, N, 0);
-#endif
+	#endif
 
 	/*Game of Life*/
 
 	gettimeofday(&ts,NULL);
 
-	#pragma omp parallel 	
-	{
-		#pragma omp single nowait
-		{
-			nthreads = omp_get_num_threads();
-			for ( t = 0 ; t < T ; t++ ) {
-				for ( i = 1 ; i < N-1 ; i++ )
-				#pragma omp task private(j, nbrs, tid) firstprivate(i, N, nthreads)
-				{
-					tid = omp_get_thread_num();
-					for ( j = tid+1 ; j < N-1 ; j+=nthreads ) {
-						nbrs = previous[i+1][j+1] + previous[i+1][j] + previous[i+1][j-1] \
-									 + previous[i][j-1] + previous[i][j+1] \
-									 + previous[i-1][j-1] + previous[i-1][j] + previous[i-1][j+1];
-						if ( nbrs == 3 || ( previous[i][j]+nbrs ==3 ) )
-							current[i][j]=1;
-						else 
-							current[i][j]=0;
-					}
-				} 
-
-#ifdef OUTPUT
-				print_to_pgm(current, N, t+1);
-#endif
-
-				//Swap current array with previous array 
-				swap=current;
-				current=previous;
-				previous=swap;
-
+	for ( t = 0 ; t < T ; t++ ) {
+		#pragma omp parallel for collapse(2)
+		for ( i = 1 ; i < N-1 ; i++ )
+			for ( j = 1 ; j < N-1 ; j++ ) {
+				nbrs = previous[i+1][j+1] + previous[i+1][j] + previous[i+1][j-1] \
+				       + previous[i][j-1] + previous[i][j+1] \
+				       + previous[i-1][j-1] + previous[i-1][j] + previous[i-1][j+1];
+				if ( nbrs == 3 || ( previous[i][j]+nbrs ==3 ) )
+					current[i][j]=1;
+				else 
+					current[i][j]=0;
 			}
-		}
-		#pragma omp taskwait
+
+		#ifdef OUTPUT
+		print_to_pgm(current, N, t+1);
+		#endif
+
+		//Swap current array with previous array 
+		swap=current;
+		current=previous;
+		previous=swap;
 	}
 
 	gettimeofday(&tf,NULL);
@@ -102,10 +89,10 @@ int main (int argc, char * argv[]) {
 
 	free_array(current, N);
 	free_array(previous, N);
-	printf("GameOfLife: Size %d Steps %d Time %lf Cores %d\n", N, T, nthreads, time);
-#ifdef OUTPUT
+	printf("GameOfLife: Size %d Steps %d Time %lf\n", N, T, time);
+	#ifdef OUTPUT
 	system(FINALIZE);
-#endif
+	#endif
 }
 
 int ** allocate_array(int N) {
