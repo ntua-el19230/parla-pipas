@@ -108,22 +108,22 @@ void kmeans(float * objects,          /* in: [numObjs][numCoords] */
             /*
              * TODO: protect update on shared "newClusterSize" array
              */
-            // #pragma omp atomic
-            // newClusterSize[index]++;
-            // for (j=0; j<numCoords; j++){
-            //     /*
-            //      * TODO: protect update on shared "newClusters" array
-            //      */
-            //     #pragma omp atomic
-            //     newClusters[index*numCoords + j] += objects[i*numCoords + j];
-            // }
-            #pragma omp critical
-            {
-                newClusterSize[index]++;
-                for (j=0; j<numCoords; j++){
-                    newClusters[index*numCoords + j] += objects[i*numCoords + j];
-                }
+            #pragma omp atomic
+            newClusterSize[index]++;
+            for (j=0; j<numCoords; j++){
+                /*
+                 * TODO: protect update on shared "newClusters" array
+                 */
+                #pragma omp atomic
+                newClusters[index*numCoords + j] += objects[i*numCoords + j];
             }
+            // #pragma omp critical
+            // {
+            //     newClusterSize[index]++;
+            //     for (j=0; j<numCoords; j++){
+            //         newClusters[index*numCoords + j] += objects[i*numCoords + j];
+            //     }
+            // }
         }
 
         // average the sum and replace old cluster centers with newClusters 
