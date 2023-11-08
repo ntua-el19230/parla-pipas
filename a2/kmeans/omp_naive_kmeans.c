@@ -4,6 +4,7 @@
 /*
  * TODO: include openmp header file
  */ 
+#include <omp.h>
 
 // square of Euclid distance between two multi-dimensional points
 inline static float euclid_dist_2(int    numdims,  /* no. dimensions */

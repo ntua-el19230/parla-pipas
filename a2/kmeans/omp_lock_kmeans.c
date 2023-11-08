@@ -6,7 +6,7 @@
  */ 
 #include <omp.h>
 
-#include "lock.h"
+#include "locks/lock.h"
 
 // square of Euclid distance between two multi-dimensional points
 inline static float euclid_dist_2(int    numdims,  /* no. dimensions */
