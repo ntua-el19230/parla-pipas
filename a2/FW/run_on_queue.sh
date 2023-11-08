@@ -17,8 +17,8 @@
 ## Run make in the src folder (modify properly)
 
 module load openmp
-cd <FIX_PATH>
+cd /home/parallel/parlab19/pps/a2/FW
 export OMP_NUM_THREADS=8
-./fw <SIZE>
+./fw 64
 # ./fw_sr <SIZE> <BSIZE>
 # ./fw_tiled <SIZE> <BSIZE>

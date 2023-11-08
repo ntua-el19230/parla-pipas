@@ -11,6 +11,8 @@
 #include <sys/time.h>
 #include "util.h"
 
+#include <omp.h>
+
 inline int min(int a, int b);
 void FW_SR (int **A, int arow, int acol, 
             int **B, int brow, int bcol, 
