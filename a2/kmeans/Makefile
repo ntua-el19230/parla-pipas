@@ -77,4 +77,5 @@ $(LOCKS_PREFIX)/clh_lock.o: $(LOCKS_PREFIX)/clh_lock.c
 
 
 clean:
-	rm -rf *.o kmeans_omp_naive kmeans_omp_critical kmeans_omp_nosync_lock kmeans_omp_pthread_mutex_lock kmeans_omp_pthread_spin_lock kmeans_omp_tas_lock kmeans_omp_ttas_lock kmeans_omp_array_lock kmeans_omp_clh_lock locks/*.o *.out *.err
+	rm -rf *.o kmeans_omp_naive kmeans_omp_nosync_lock kmeans_omp_pthread_mutex_lock kmeans_omp_pthread_spin_lock kmeans_omp_tas_lock kmeans_omp_ttas_lock kmeans_omp_array_lock kmeans_omp_clh_lock locks/*.o *.out *.err
+
