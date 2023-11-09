@@ -104,8 +104,8 @@ void kmeans(float * objects,          /* in: [numObjs][numCoords] */
          */
         #pragma omp parallel for \
         private(i,j,index) \
-        firstprivate(numObjs,numClusters,numCoords, local_newClusters,local_newClusterSize) \
-        shared(objects,clusters,membership,newClusters,newClusterSize) \
+        firstprivate(numObjs,numClusters,numCoords) \
+        shared(objects,clusters,membership,newClusters,newClusterSize, local_newClusters,local_newClusterSize) \
         schedule(static) reduction(+:delta)
 
         for (i=0; i<numObjs; i++)
