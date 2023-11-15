@@ -2,3 +2,9 @@ Bleona*
 Natalia*
 a.out
 *.tar*
+*.err
+*.out
+kmeans_omp_*
+minimagiatonaltan
+fw_sr
+fw_sr2

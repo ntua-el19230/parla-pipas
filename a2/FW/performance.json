@@ -1,0 +1,308 @@
+[
+  {
+    "size": 1024,
+    "block": 64,
+    "data": [
+      {
+        "threads": 1,
+        "time": 0.714
+      },
+      {
+        "threads": 2,
+        "time": 0.446
+      },
+      {
+        "threads": 4,
+        "time": 0.487
+      },
+      {
+        "threads": 8,
+        "time": 0.478
+      },
+      {
+        "threads": 16,
+        "time": 0.508
+      },
+      {
+        "threads": 32,
+        "time": 0.653
+      },
+      {
+        "threads": 64,
+        "time": 1.223
+      }
+    ]
+  },
+  {
+    "size": 1024,
+    "block": 128,
+    "data": [
+      {
+        "threads": 1,
+        "time": 0.660
+      },
+      {
+        "threads": 2,
+        "time": 0.519
+      },
+      {
+        "threads": 4,
+        "time": 0.570
+      },
+      {
+        "threads": 8,
+        "time": 0.576
+      },
+      {
+        "threads": 16,
+        "time": 0.620
+      },
+      {
+        "threads": 32,
+        "time": 0.630
+      },
+      {
+        "threads": 64,
+        "time": 0.687
+      }
+    ]
+  },
+  {
+    "size": 1024,
+    "block": 256,
+    "data": [
+      {
+        "threads": 1,
+        "time": 0.790
+      },
+      {
+        "threads": 2,
+        "time": 0.620
+      },
+      {
+        "threads": 4,
+        "time": 0.641
+      },
+      {
+        "threads": 8,
+        "time": 0.690
+      },
+      {
+        "threads": 16,
+        "time": 0.664
+      },
+      {
+        "threads": 32,
+        "time": 0.739
+      },
+      {
+        "threads": 64,
+        "time": 0.787
+      }
+    ]
+  },
+  {
+    "size": 2048,
+    "block": 64,
+    "data": [
+      {
+        "threads": 1,
+        "time": 5.248
+      },
+      {
+        "threads": 2,
+        "time": 3.035
+      },
+      {
+        "threads": 4,
+        "time": 3.110
+      },
+      {
+        "threads": 8,
+        "time": 3.202
+      },
+      {
+        "threads": 16,
+        "time": 3.235
+      },
+      {
+        "threads": 32,
+        "time": 3.233
+      },
+      {
+        "threads": 64,
+        "time": 4.735
+      }
+    ]
+  },
+  {
+    "size": 2048,
+    "block": 128,
+    "data": [
+      {
+        "threads": 1,
+        "time": 4.760
+      },
+      {
+        "threads": 2,
+        "time": 3.081
+      },
+      {
+        "threads": 4,
+        "time": 3.326
+      },
+      {
+        "threads": 8,
+        "time": 3.436
+      },
+      {
+        "threads": 16,
+        "time": 3.685
+      },
+      {
+        "threads": 32,
+        "time": 2.634
+      },
+      {
+        "threads": 64,
+        "time": 4.115
+      }
+    ]
+  },
+  {
+    "size": 2048,
+    "block": 256,
+    "data": [
+      {
+        "threads": 1,
+        "time": 5.466
+      },
+      {
+        "threads": 2,
+        "time": 3.625
+      },
+      {
+        "threads": 4,
+        "time": 3.797
+      },
+      {
+        "threads": 8,
+        "time": 3.809
+      },
+      {
+        "threads": 16,
+        "time": 4.174
+      },
+      {
+        "threads": 32,
+        "time": 4.188
+      },
+      {
+        "threads": 64,
+        "time": 4.518
+      }
+    ]
+  },
+  {
+    "size": 4096,
+    "block": 64,
+    "data": [
+      {
+        "threads": 1,
+        "time": 43.300
+      },
+      {
+        "threads": 2,
+        "time": 22.246
+      },
+      {
+        "threads": 4,
+        "time": 23.045
+      },
+      {
+        "threads": 8,
+        "time": 23.528
+      },
+      {
+        "threads": 16,
+        "time": 23.060
+      },
+      {
+        "threads": 32,
+        "time": 24.069
+      },
+      {
+        "threads": 64,
+        "time": 26.401
+      }
+    ]
+  },
+  {
+    "size": 4096,
+    "block": 128,
+    "data": [
+      {
+        "threads": 1,
+        "time": 36.385
+      },
+      {
+        "threads": 2,
+        "time": 21.018
+      },
+      {
+        "threads": 4,
+        "time": 22.727
+      },
+      {
+        "threads": 8,
+        "time": 22.561
+      },
+      {
+        "threads": 16,
+        "time": 23.546
+      },
+      {
+        "threads": 32,
+        "time": 23.734
+      },
+      {
+        "threads": 64,
+        "time": 25.526
+      }
+    ]
+  },
+  {
+    "size": 4096,
+    "block": 256,
+    "data": [
+      {
+        "threads": 1,
+        "time": 43.712
+      },
+      {
+        "threads": 2,
+        "time": 25.512
+      },
+      {
+        "threads": 4,
+        "time": 26.378
+      },
+      {
+        "threads": 8,
+        "time": 23.361
+      },
+      {
+        "threads": 16,
+        "time": 27.333
+      },
+      {
+        "threads": 32,
+        "time": 27.695
+      },
+      {
+        "threads": 64,
+        "time": 29.387
+      }
+    ]
+  }
+]

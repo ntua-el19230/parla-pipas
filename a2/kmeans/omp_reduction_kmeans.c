@@ -136,10 +136,10 @@ void kmeans(float * objects,          /* in: [numObjs][numCoords] */
          *       This operation will be performed by one thread
          */
         for(k=0; k<nthreads; ++k) {
-          for(int i=0; i<numClusters; ++i)
+          for(i=0; i<numClusters; ++i)
             newClusterSize[i] += local_newClusterSize[k][i];
           
-          for(int i=0; i<numClusters*numCoords; ++i)
+          for(i=0; i<numClusters*numCoords; ++i)
             newClusters[i] += local_newClusters[k][i];
         }
 

@@ -4,11 +4,11 @@
 #PBS -N run_fw
 
 ## Output and error files
-#PBS -o run_fw.out
-#PBS -e run_fw.err
+#PBS -o result.out
+#PBS -e error.err
 
 ## How many machines should we get? 
-#PBS -l nodes=1:ppn=8
+#PBS -l nodes=1:ppn=1
 
 ##How long should the job run for?
 #PBS -l walltime=00:10:00
@@ -18,7 +18,7 @@
 
 module load openmp
 cd /home/parallel/parlab19/pps/a2/FW
-export OMP_NUM_THREADS=8
-./fw 64
-# ./fw_sr <SIZE> <BSIZE>
-# ./fw_tiled <SIZE> <BSIZE>
+export OMP_NUM_THREADS=64
+for x in 64 128 256; do
+	./fw_sr 2048 $x
+done

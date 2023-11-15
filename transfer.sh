@@ -6,6 +6,12 @@ function show_usage {
   exit 1
 }
 
+# Function to prompt for a password
+function prompt_for_password {
+  read -s -p "Enter password for Orion: " ORION_PASSWORD
+  echo
+}
+
 # Check if an option and source directory are provided
 if [ "$#" -lt 2 ]; then
   show_usage
@@ -38,26 +44,42 @@ SOURCE_HOST="scirouter"
 DEST_HOST="orion"
 DEST_DIR="~/"
 
+# Prompt for Orion password
+prompt_for_password
+
+function pass {
+  sshpass -p "$ORION_PASSWORD"
+}
+
 # Perform the specified operation
 case $OPERATION in
   "get")
-    # Transfer from source host to destination host
-    scp -r -o ProxyJump=$USER@$DEST_HOST $USER@$SOURCE_HOST:~/pps/$SOURCE_DIR $USER@$DEST_HOST:$DEST_DIR
+    echo "Fetching $SOURCE_DIR from scirouter to orion"
 
-    # Transfer from destination host to local host
-    scp -r $USER@$DEST_HOST:$DEST_DIR/$SOURCE_DIR .
+    # pass from source host to destination host
+    sshpass -p "$ORION_PASSWORD" scp -r -o ProxyJump=$USER@$DEST_HOST $USER@$SOURCE_HOST:~/pps/$SOURCE_DIR $USER@$DEST_HOST:$DEST_DIR
+
+    echo "Fetching $SOURCE_DIR from orion"
+
+    # pass from destination host to local host
+    sshpass -p "$ORION_PASSWORD" scp -r $USER@$DEST_HOST:$DEST_DIR$SOURCE_DIR .
+
+    echo done
+
     ;;
   "put")
-    # Transfer from local host to destination host
-    scp -r $SOURCE_DIR $USER@$DEST_HOST:$DEST_DIR
+    # pass from local host to destination host
+    sshpass -p "$ORION_PASSWORD" scp -r $SOURCE_DIR $USER@$DEST_HOST:$DEST_DIR
 
-    # Transfer from destination host to source host
-    scp -r -o ProxyJump=$USER@$DEST_HOST $USER@$SOURCE_HOST:$DEST_DIR $USER@$SOURCE_HOST:~/pps/
+    # pass from destination host to source host
+    sshpass -p "$ORION_PASSWORD" scp -r -o ProxyJump=$USER@$DEST_HOST $USER@$SOURCE_HOST:$DEST_DIR $USER@$SOURCE_HOST:~/pps/
     ;;
   *)
     show_usage
     ;;
 esac
 
-# Remove files from destination host after transfer
-ssh $USER@$DEST_HOST "rm -r $DEST_DIR"
+echo "Cleaning up orion"
+
+# Remove files from destination host after pass
+sshpass -p "$ORION_PASSWORD" ssh $USER@$DEST_HOST "rm -rf $DEST_DIR/$SOURCE_DIR"

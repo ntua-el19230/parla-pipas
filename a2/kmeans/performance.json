@@ -1,0 +1,326 @@
+[
+  {
+    "implementation": "critical",
+    "clusters": 16,
+    "bindstrat": 1,
+    "seqtime": 20.645,
+    "data": [
+      {
+        "threads": 1,
+        "time": 20.645
+      },
+      {
+        "threads": 2,
+        "time": 24.160
+      },
+      {
+        "threads": 4,
+        "time": 23.546
+      },
+      {
+        "threads": 8,
+        "time": 18.985
+      },
+      {
+        "threads": 16,
+        "time": 19.644
+      },
+      {
+        "threads": 32,
+        "time": 21.523
+      },
+      {
+        "threads": 64,
+        "time": 24.979
+      }
+    ]
+  },
+  {
+    "implementation": "critical",
+    "clusters": 16,
+    "bindstrat": 2,
+    "seqtime": 20.645,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 20.559
+      },
+      {
+        "threads": 4,
+        "time": 13.381
+      },
+      {
+        "threads": 8,
+        "time": 9.869
+      },
+      {
+        "threads": 16,
+        "time": 16.290
+      },
+      {
+        "threads": 32,
+        "time": 22.001
+      },
+      {
+        "threads": 64,
+        "time": 25.691
+      }
+    ]
+  },
+  {
+    "implementation": "critical",
+    "clusters": 16,
+    "bindstrat": 4,
+    "seqtime": 20.645,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": null
+      },
+      {
+        "threads": 4,
+        "time": 20.656
+      },
+      {
+        "threads": 8,
+        "time": 13.324
+      },
+      {
+        "threads": 16,
+        "time": 19.021
+      },
+      {
+        "threads": 32,
+        "time": 20.638
+      },
+      {
+        "threads": 64,
+        "time": 24.931
+      }
+    ]
+  },
+  {
+    "implementation": "critical",
+    "clusters": 16,
+    "bindstrat": 8,
+    "seqtime": 20.645,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": null
+      },
+      {
+        "threads": 4,
+        "time": null
+      },
+      {
+        "threads": 8,
+        "time": 20.821
+      },
+      {
+        "threads": 16,
+        "time": 22.936
+      },
+      {
+        "threads": 32,
+        "time": 25.064
+      },
+      {
+        "threads": 64,
+        "time": 25.580
+      }
+    ]
+  },
+  {
+    "implementation": "critical",
+    "clusters": 16,
+    "bindstrat": 16,
+    "seqtime": 20.645,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": null
+      },
+      {
+        "threads": 4,
+        "time": null
+      },
+      {
+        "threads": 8,
+        "time": null
+      },
+      {
+        "threads": 16,
+        "time": 21.131
+      },
+      {
+        "threads": 32,
+        "time": 23.125
+      },
+      {
+        "threads": 64,
+        "time": 20.833
+      }
+    ]
+  },
+  {
+    "implementation": "critical",
+    "clusters": 16,
+    "bindstrat": 32,
+    "seqtime": 20.645,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": null
+      },
+      {
+        "threads": 4,
+        "time": null
+      },
+      {
+        "threads": 8,
+        "time": null
+      },
+      {
+        "threads": 16,
+        "time": null
+      },
+      {
+        "threads": 32,
+        "time": 21.804
+      },
+      {
+        "threads": 64,
+        "time": 16.263
+      }
+    ]
+  },
+  {
+    "implementation": "reduction",
+    "clusters": 16,
+    "bindstrat": 1,
+    "seqtime": 15.684,
+    "data": [
+      {
+        "threads": 1,
+        "time": 15.684
+      },
+      {
+        "threads": 2,
+        "time": 14.605
+      },
+      {
+        "threads": 4,
+        "time": 10.010
+      },
+      {
+        "threads": 8,
+        "time": 5.678
+      },
+      {
+        "threads": 16,
+        "time": 3.224
+      },
+      {
+        "threads": 32,
+        "time": 1.906
+      },
+      {
+        "threads": 64,
+        "time": 1.277
+      }
+    ]
+  },
+  {
+    "implementation": "reduction",
+    "clusters": 16,
+    "bindstrat": 2,
+    "seqtime": 15.409,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 15.409
+      },
+      {
+        "threads": 4,
+        "time": 7.787
+      },
+      {
+        "threads": 8,
+        "time": 4.190
+      },
+      {
+        "threads": 16,
+        "time": 2.190
+      },
+      {
+        "threads": 32,
+        "time": 1.156
+      },
+      {
+        "threads": 64,
+        "time": 0.937
+      }
+    ]
+  },
+  {
+    "implementation": "reduction",
+    "clusters": 4,
+    "bindstrat": 1,
+    "seqtime": 10.142,
+    "data": [
+      {
+        "threads": 1,
+        "time": 10.142
+      },
+      {
+        "threads": 2,
+        "time": 34.054
+      },
+      {
+        "threads": 4,
+        "time": 50.750
+      },
+      {
+        "threads": 8,
+        "time": 36.857
+      },
+      {
+        "threads": 16,
+        "time": 29.584
+      },
+      {
+        "threads": 32,
+        "time": 24.595
+      },
+      {
+        "threads": 64,
+        "time": 19.541
+      }
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+CRITICAL-16
+
+binding:1
+1-20.645
+2-24.160
+4-23.546
+8-18.985
+16-19.644
+32-21.523
+64-24.979
+
+binding:2
+1-invalid
+2-20.559 (1-core)(unchanged)
+4-13.381 (2-core)
+8-9.869 (4-core)
+16-16.29 (8-core)
+32-22.001 (16-core)
+64-25.691 (32-core)
+
+binding:4
+1-invalid
+2-invalid
+4-20.656 (1-core)
+8-13.324 (2-core)
+16-19.021 (4-core)
+32-20.638 (8-core)
+64-24.931 (16-core)
+
+binding:8
+1-invalid
+2-invalid
+4-invalid
+8-20.821 (1-core)
+16-22.936 (2-core)
+32-25.064 (4-core)
+64-25.580 (8-core)
+
+binding:16
+1-invalid
+2-invalid
+4-invalid
+8-invalid
+16-21.131 (1-core)
+32-23.125 (2-core)
+64-20.833 (4-core)
+
+binding:32
+1-invalid
+2-invalid
+4-invalid
+8-invalid
+16-invalid
+32-21.804 (1-core)
+64-16.263 (2-core)
+
+
+REDUCTION-16
+
+binding:1
+1-15.684
+2-14.605
+4-10.010
+8-5.678
+16-3.224
+32-1.906
+64-1.277
+
+binding:2
+1-invalid
+2-15.409 (1-core)
+4-7.787 (2-core)
+8-4.190 (4-core)
+16-2.190 (8-core)
+32-1.156 (16-core)
+64-0.937 (32-core)
+
+
+REDUCTION-4
+
+binding:1
+1-10.142
+2-34.054
+4-50.750
+8-36.857
+16-29.584
+32-24.595
+64-19.541
+
+
+

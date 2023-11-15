@@ -17,12 +17,18 @@ LOCKS_FLAGS = -I$(LOCKS_PREFIX)
 
 # all: kmeans_seq
 # all: kmeans_seq kmeans_omp_naive kmeans_omp_reduction
-all:  kmeans_omp_naive kmeans_omp_critical kmeans_omp_nosync_lock kmeans_omp_pthread_mutex_lock kmeans_omp_pthread_spin_lock kmeans_omp_tas_lock kmeans_omp_ttas_lock kmeans_omp_array_lock kmeans_omp_clh_lock
+# all:  kmeans_omp_naive kmeans_omp_critical kmeans_omp_nosync_lock kmeans_omp_pthread_mutex_lock kmeans_omp_pthread_spin_lock kmeans_omp_tas_lock kmeans_omp_ttas_lock kmeans_omp_array_lock kmeans_omp_clh_lock
+all: kmeans_omp_critical kmeans_omp_reduction kmeans_omp_reduction_ft
 
 kmeans_omp_naive: main.o file_io.o util.o omp_naive_kmeans.o
 	$(CC) $(OMPFLAGS) $^ -o $@ $(LDFLAGS)
 kmeans_omp_critical: main.o file_io.o util.o omp_critical_kmeans.o
 	$(CC) $(OMPFLAGS) $^ -o $@ $(LDFLAGS)
+kmeans_omp_reduction: main.o file_io.o util.o omp_reduction_kmeans.o
+	$(CC) $(OMPFLAGS) $^ -o $@ $(LDFLAGS)
+kmeans_omp_reduction_ft: main.o file_io.o util.o omp_reduction_kmeans_ft.o
+	$(CC) $(OMPFLAGS) $^ -o $@ $(LDFLAGS)
+
 
 kmeans_omp_nosync_lock: main.o file_io.o util.o omp_lock_kmeans.o $(LOCKS_PREFIX)/nosync_lock.o
 	$(CC) $(OMPFLAGS) -pthread $^ -o $@ $(LDFLAGS)
@@ -48,6 +54,8 @@ omp_naive_kmeans.o: omp_naive_kmeans.c $(COMM_SRC) $(H_FILES)
 omp_critical_kmeans.o: omp_critical_kmeans.c $(COMM_SRC) $(H_FILES)
 	$(CC) $(OMPFLAGS) -c $< -o $@
 omp_reduction_kmeans.o: omp_reduction_kmeans.c $(COMM_SRC) $(H_FILES)
+	$(CC) $(OMPFLAGS) -c $< -o $@
+omp_reduction_kmeans_ft.o: omp_reduction_kmeans_ft.c $(COMM_SRC) $(H_FILES)
 	$(CC) $(OMPFLAGS) -c $< -o $@
 omp_lock_kmeans.o: omp_lock_kmeans.c $(COMM_SRC) $(H_FILES) 
 	$(CC) $(OMPFLAGS) $(LOCKS_FLAGS) -c $< -o $@
