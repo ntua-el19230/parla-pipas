@@ -2,8 +2,9 @@
   {
     "implementation": "critical",
     "clusters": 16,
+    "size": 256,
     "bindstrat": 1,
-    "seqtime": 20.645,
+    "seqtime": 13.932,
     "data": [
       {
         "threads": 1,
@@ -38,8 +39,9 @@
   {
     "implementation": "critical",
     "clusters": 16,
+    "size": 256,
     "bindstrat": 2,
-    "seqtime": 20.645,
+    "seqtime": 13.932,
     "data": [
       {
         "threads": 1,
@@ -74,8 +76,9 @@
   {
     "implementation": "critical",
     "clusters": 16,
+    "size": 256,
     "bindstrat": 4,
-    "seqtime": 20.645,
+    "seqtime": 13.932,
     "data": [
       {
         "threads": 1,
@@ -110,8 +113,9 @@
   {
     "implementation": "critical",
     "clusters": 16,
+    "size": 256,
     "bindstrat": 8,
-    "seqtime": 20.645,
+    "seqtime": 13.932,
     "data": [
       {
         "threads": 1,
@@ -146,8 +150,9 @@
   {
     "implementation": "critical",
     "clusters": 16,
+    "size": 256,
     "bindstrat": 16,
-    "seqtime": 20.645,
+    "seqtime": 13.932,
     "data": [
       {
         "threads": 1,
@@ -182,8 +187,9 @@
   {
     "implementation": "critical",
     "clusters": 16,
+    "size": 256,
     "bindstrat": 32,
-    "seqtime": 20.645,
+    "seqtime": 13.932,
     "data": [
       {
         "threads": 1,
@@ -218,8 +224,9 @@
   {
     "implementation": "reduction",
     "clusters": 16,
+    "size": 256,
     "bindstrat": 1,
-    "seqtime": 15.684,
+    "seqtime": 13.932,
     "data": [
       {
         "threads": 1,
@@ -254,8 +261,9 @@
   {
     "implementation": "reduction",
     "clusters": 16,
+    "size": 256,
     "bindstrat": 2,
-    "seqtime": 15.409,
+    "seqtime": 13.932,
     "data": [
       {
         "threads": 1,
@@ -290,6 +298,7 @@
   {
     "implementation": "reduction",
     "clusters": 4,
+    "size": 256,
     "bindstrat": 1,
     "seqtime": 10.142,
     "data": [
@@ -320,6 +329,635 @@
       {
         "threads": 64,
         "time": 19.541
+      }
+    ]
+  },
+  {
+    "implementation": "reduction-ft",
+    "clusters": 4,
+    "size": 256,
+    "bindstrat": 1,
+    "seqtime": 13.272,
+    "data": [
+      {
+        "threads": 1,
+        "time": 10.142
+      },
+      {
+        "threads": 2,
+        "time": 5.148
+      },
+      {
+        "threads": 4,
+        "time": 2.667
+      },
+      {
+        "threads": 8,
+        "time": 1.517
+      },
+      {
+        "threads": 16,
+        "time": 0.810
+      },
+      {
+        "threads": 32,
+        "time": 0.959
+      },
+      {
+        "threads": 64,
+        "time": 0.765
+      }
+    ]
+  },
+  {
+    "implementation": "nosync-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 1,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": 1.829
+      },
+      {
+        "threads": 2,
+        "time": 1.886
+      },
+      {
+        "threads": 4,
+        "time": 1.968
+      },
+      {
+        "threads": 8,
+        "time": 1.073
+      },
+      {
+        "threads": 16,
+        "time": 1.152
+      },
+      {
+        "threads": 32,
+        "time": 1.236
+      },
+      {
+        "threads": 64,
+        "time": 1.443
+      }
+    ]
+  },
+  {
+    "implementation": "pthread-mutex-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 1,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": 1.843
+      },
+      {
+        "threads": 2,
+        "time": 1.355
+      },
+      {
+        "threads": 4,
+        "time": 1.655
+      },
+      {
+        "threads": 8,
+        "time": 2.100
+      },
+      {
+        "threads": 16,
+        "time": 2.740
+      },
+      {
+        "threads": 32,
+        "time": 3.575
+      },
+      {
+        "threads": 64,
+        "time": 8.089
+      }
+    ]
+  },
+  {
+    "implementation": "pthread-spin-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 1,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": 1.761
+      },
+      {
+        "threads": 2,
+        "time": 3.710
+      },
+      {
+        "threads": 4,
+        "time": 5.382
+      },
+      {
+        "threads": 8,
+        "time": 5.903
+      },
+      {
+        "threads": 16,
+        "time": 7.133
+      },
+      {
+        "threads": 32,
+        "time": 8.960
+      },
+      {
+        "threads": 64,
+        "time": 7.599
+      }
+    ]
+  },
+  {
+    "implementation": "tas-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 1,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": 1.762
+      },
+      {
+        "threads": 2,
+        "time": 4.032
+      },
+      {
+        "threads": 4,
+        "time": 5.293
+      },
+      {
+        "threads": 8,
+        "time": 8.763
+      },
+      {
+        "threads": 16,
+        "time": 13.191
+      },
+      {
+        "threads": 32,
+        "time": 22.247
+      },
+      {
+        "threads": 64,
+        "time": 24.370
+      }
+    ]
+  },
+  {
+    "implementation": "ttas-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 1,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": 1.762
+      },
+      {
+        "threads": 2,
+        "time": 3.295
+      },
+      {
+        "threads": 4,
+        "time": 5.418
+      },
+      {
+        "threads": 8,
+        "time": 6.001
+      },
+      {
+        "threads": 16,
+        "time": 7.798
+      },
+      {
+        "threads": 32,
+        "time": 9.559
+      },
+      {
+        "threads": 64,
+        "time": 10.257
+      }
+    ]
+  },
+  {
+    "implementation": "array-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 1,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": 1.947
+      },
+      {
+        "threads": 2,
+        "time": 4.507
+      },
+      {
+        "threads": 4,
+        "time": 5.471
+      },
+      {
+        "threads": 8,
+        "time": 4.769
+      },
+      {
+        "threads": 16,
+        "time": 4.140
+      },
+      {
+        "threads": 32,
+        "time": 4.561
+      },
+      {
+        "threads": 64,
+        "time": 5.036
+      }
+    ]
+  },
+  {
+    "implementation": "clh-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 1,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": 1.876
+      },
+      {
+        "threads": 2,
+        "time": 3.346
+      },
+      {
+        "threads": 4,
+        "time": 2.973
+      },
+      {
+        "threads": 8,
+        "time": 2.791
+      },
+      {
+        "threads": 16,
+        "time": 2.767
+      },
+      {
+        "threads": 32,
+        "time": 3.083
+      },
+      {
+        "threads": 64,
+        "time": 3.342
+      }
+    ]
+  },
+  {
+    "implementation": "nosync-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 2,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 1.919
+      },
+      {
+        "threads": 4,
+        "time": 1.852
+      },
+      {
+        "threads": 8,
+        "time": 1.029
+      },
+      {
+        "threads": 16,
+        "time": 1.120
+      },
+      {
+        "threads": 32,
+        "time": 1.400
+      },
+      {
+        "threads": 64,
+        "time": 1.425
+      }
+    ]
+  },
+  {
+    "implementation": "pthread-mutex-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 2,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 1.287
+      },
+      {
+        "threads": 4,
+        "time": 1.562
+      },
+      {
+        "threads": 8,
+        "time": 2.079
+      },
+      {
+        "threads": 16,
+        "time": 2.728
+      },
+      {
+        "threads": 32,
+        "time": 4.595
+      },
+      {
+        "threads": 64,
+        "time": 8.203
+      }
+    ]
+  },
+  {
+    "implementation": "pthread-spin-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 2,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 3.577
+      },
+      {
+        "threads": 4,
+        "time": 4.840
+      },
+      {
+        "threads": 8,
+        "time": 6.185
+      },
+      {
+        "threads": 16,
+        "time": 7.239
+      },
+      {
+        "threads": 32,
+        "time": 8.496
+      },
+      {
+        "threads": 64,
+        "time": 8.785
+      }
+    ]
+  },
+  {
+    "implementation": "tas-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 2,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 3.946
+      },
+      {
+        "threads": 4,
+        "time": 5.358
+      },
+      {
+        "threads": 8,
+        "time": 9.103
+      },
+      {
+        "threads": 16,
+        "time": 13.217
+      },
+      {
+        "threads": 32,
+        "time": 22.015
+      },
+      {
+        "threads": 64,
+        "time": 23.301
+      }
+    ]
+  },
+  {
+    "implementation": "ttas-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 2,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 3.362
+      },
+      {
+        "threads": 4,
+        "time": 4.964
+      },
+      {
+        "threads": 8,
+        "time": 5.942
+      },
+      {
+        "threads": 16,
+        "time": 7.520
+      },
+      {
+        "threads": 32,
+        "time": 9.113
+      },
+      {
+        "threads": 64,
+        "time": 9.551
+      }
+    ]
+  },
+  {
+    "implementation": "array-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 2,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 4.490
+      },
+      {
+        "threads": 4,
+        "time": 4.723
+      },
+      {
+        "threads": 8,
+        "time": 4.919
+      },
+      {
+        "threads": 16,
+        "time": 4.543
+      },
+      {
+        "threads": 32,
+        "time": 4.702
+      },
+      {
+        "threads": 64,
+        "time": 4.903
+      }
+    ]
+  },
+  {
+    "implementation": "clh-lock",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 2,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 3.058
+      },
+      {
+        "threads": 4,
+        "time": 3.660
+      },
+      {
+        "threads": 8,
+        "time": 2.338
+      },
+      {
+        "threads": 16,
+        "time": 2.674
+      },
+      {
+        "threads": 32,
+        "time": 3.077
+      },
+      {
+        "threads": 64,
+        "time": 3.488
+      }
+    ]
+  },
+  {
+    "implementation": "critical",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 1,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": 2.630
+      },
+      {
+        "threads": 2,
+        "time": 3.140
+      },
+      {
+        "threads": 4,
+        "time": 2.904
+      },
+      {
+        "threads": 8,
+        "time": 2.080
+      },
+      {
+        "threads": 16,
+        "time": 2.372
+      },
+      {
+        "threads": 32,
+        "time": 2.675
+      },
+      {
+        "threads": 64,
+        "time": 3.186
+      }
+    ]
+  },
+  {
+    "implementation": "critical",
+    "clusters": 16,
+    "size": 32,
+    "bindstrat": 2,
+    "seqtime": 1.758,
+    "data": [
+      {
+        "threads": 1,
+        "time": null
+      },
+      {
+        "threads": 2,
+        "time": 2.610
+      },
+      {
+        "threads": 4,
+        "time": 1.750
+      },
+      {
+        "threads": 8,
+        "time": 1.320
+      },
+      {
+        "threads": 16,
+        "time": 2.190
+      },
+      {
+        "threads": 32,
+        "time": 2.770
+      },
+      {
+        "threads": 64,
+        "time": 3.304
       }
     ]
   }
