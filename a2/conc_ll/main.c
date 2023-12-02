@@ -99,8 +99,8 @@ int main(int argc, char **argv)
 	//> Print results.
 	double secs = timer_report_sec(wall_timer);
 	double throughout = (double)total_ops / secs / 1000.0;
-	printf("Nthreads: %d  Runtime(sec): %d  Workload: %d/%d/%d  Throughput(Kops/sec): %5.2lf\n",
-	        nthreads, RUNTIME, contains_pct, add_pct, remove_pct, throughout);
+	printf("Nthreads: %d  Runtime(sec): %d  Size: %d  Workload: %d/%d/%d  Throughput(Kops/sec): %5.2lf\n",
+	        nthreads, RUNTIME, list_size, contains_pct, add_pct, remove_pct, throughout);
 
 //	ll_print(ll);
 	ll_free(ll);

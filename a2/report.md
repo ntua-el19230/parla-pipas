@@ -298,4 +298,31 @@ sxolia gia tis metriseis...
 
 ## Ταυτόχρονες Δομές Δεδομένων
 
-  - Γραφικές Παραστάσεις
+1. Γραφικές Παραστάσεις
+
+  <div>
+    <img src='conc_ll/plots/conc_ll_1024_100-0-0.png'>
+    <img src='conc_ll/plots/conc_ll_1024_80-10-10.png'>
+    <img src='conc_ll/plots/conc_ll_1024_20-40-40.png'>
+    <img src='conc_ll/plots/conc_ll_1024_0-50-50.png'>
+  </div>
+
+  ----
+  
+  <div>
+    <img src='conc_ll/plots/conc_ll_8192_100-0-0.png'>
+    <img src='conc_ll/plots/conc_ll_8192_80-10-10.png'>
+    <img src='conc_ll/plots/conc_ll_8192_20-40-40.png'>
+    <img src='conc_ll/plots/conc_ll_8192_0-50-50.png'>
+  </div>
+
+  - Coarse-grain locking
+    - sxolia...
+  - Fine-grain locking
+    - sxolia...
+  - Optimistic synchronization
+    - sxolia...
+  - Lazy synchronization
+    - sxolia...
+  - Non-blocking synchronization
+    - sxolia...

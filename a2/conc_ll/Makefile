@@ -20,3 +20,6 @@ x.nb: $(CFILES) ll/ll_nb.c
 
 clean:
 	rm -f x.*
+
+logs:
+	rm -f *.err *.out

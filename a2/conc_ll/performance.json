@@ -1,0 +1,2882 @@
+[
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 1318.68
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 212.63
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 601.7
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 1491.47
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 688.28
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1905.5
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 362.79
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 837.82
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1801.69
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1080.25
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1454.7
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 367.25
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 799.95
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1408.95
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1161.78
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1429.05
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 357.09
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 839.15
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1333.88
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1302.6
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 138.64
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 28.41
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 67.47
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 119.9
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 91.32
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 70.27
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 36.2
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 30.62
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 56.07
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 58.14
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 64.34
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 34.16
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 26.63
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 53.29
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 67.08
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 81.78
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 39.44
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 27.74
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 62.06
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0",
+    "Nthreads": 1,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 66.41
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 1316.81
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 293.59
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 652.83
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 2917.46
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 1407.37
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1674.55
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 231.52
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 761.99
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1715.54
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1387.1
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1283.88
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 230.36
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 763.34
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1336.94
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1467.7
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1278.15
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 226.92
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 770.29
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1244.49
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1494.4
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 144.1
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 47.94
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 90.95
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 291.28
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 173.79
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 70.96
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 36.83
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 54.77
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 108.11
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 120.34
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 71.12
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 34.7
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 56.61
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 118.37
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 128.89
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 77.49
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 34.01
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 56.41
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 120.23
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1",
+    "Nthreads": 2,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 133.42
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 1290.63
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 424.66
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 735.95
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 5786.2
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 2671.95
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 883.95
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 318.35
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 615.56
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1314.04
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1322.3
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 744.96
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 319.76
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 629.48
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1214.97
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1355.12
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 743.27
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 319.87
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 639.35
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1182.8
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1354.49
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 136.91
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 76.65
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 122.88
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 553.51
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 339.24
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 67.37
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 55.07
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 110.73
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 209.28
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 226.66
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 70.02
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 51.61
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 104.92
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 221.94
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 246.1
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 75.55
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 51.38
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 106.27
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 225.08
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3",
+    "Nthreads": 4,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 257.16
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 1253.15
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 493.52
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 708.6
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 11040.26
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 5127.46
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 334.18
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 492.66
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 819.37
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1834.15
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1965.7
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 298.21
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 494.29
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 861.16
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1705.68
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1905.12
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 308.31
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 496.51
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 870.4
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1674.65
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1892.76
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 133.23
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 161.08
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 132.95
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 1073.35
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 656.01
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 48.65
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 86.22
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 162.6
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 315.94
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 334.21
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 44.9
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 82.36
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 163.61
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 344.54
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 377.6
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 46.54
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 81.77
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 164.13
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 348.18
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7",
+    "Nthreads": 8,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 387.74
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 730.2
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 191.58
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 296.45
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 22054.65
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 10308.35
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 383.26
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 222.32
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 505.56
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1307.8
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1486.42
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 222.17
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 226.12
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 539.28
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1109.73
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1301.15
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 209.67
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 225.39
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 540.7
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1077.68
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1260.5
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 125.02
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 72.81
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 102.47
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 2152.76
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 1311.27
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 42.72
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 50.97
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 231.74
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 492.93
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 506.43
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 31.83
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 47.63
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 239.19
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 505.02
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 553.85
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 37.08
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 46.86
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 233.83
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 487.38
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "Nthreads": 16,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 541.28
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 696.15
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 130.47
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 176.36
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 44104.69
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 20524.23
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 262.53
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 257.47
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1681.18
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 5488.65
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 5968.78
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 236.77
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 242.51
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 1657.0
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 3732.42
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 4765.55
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 428.35
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 242.33
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 1693.48
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 3411.57
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 4570.94
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 124.83
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 37.74
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 83.4
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 4273.2
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 2625.76
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 47.07
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 56.37
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 371.75
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 848.62
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 843.43
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 34.93
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 59.47
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 374.07
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 790.01
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 895.75
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 36.16
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 60.09
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 373.15
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 783.35
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+    "Nthreads": 32,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 901.98
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 623.53
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 83.57
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 354.51
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 80873.22
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 35418.81
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 202.04
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 253.1
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 2537.32
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 8420.96
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 9857.09
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 216.72
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 245.72
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 2445.35
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 6085.66
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 8049.28
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 149.67
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 253.22
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 2365.72
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 5471.32
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 7956.03
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 121.18
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 18.37
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 115.75
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 7852.76
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 5007.82
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 33.69
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 64.81
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 412.93
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 874.43
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 873.47
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 27.17
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 90.32
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 424.29
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 873.57
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 966.72
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 26.79
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 94.04
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 422.95
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 870.66
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63",
+    "Nthreads": 64,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 874.83
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 314.73
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 2.03
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 176.16
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 83312.43
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "100/0/0",
+    "Throughput": 39546.0
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 81.8
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 10.09
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 225.55
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 1308.2
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "80/10/10",
+    "Throughput": 7001.43
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 118.77
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 10.74
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 215.02
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 345.44
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "20/40/40",
+    "Throughput": 4910.59
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 95.09
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 3.94
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 204.81
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 270.1
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 1024,
+    "Workload": "0/50/50",
+    "Throughput": 4329.86
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 62.71
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 0.64
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 62.88
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 8282.53
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "100/0/0",
+    "Throughput": 5052.37
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 18.0
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 0.37
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 224.49
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 587.73
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "80/10/10",
+    "Throughput": 567.37
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 11.63
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 0.31
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 225.78
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 544.14
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "20/40/40",
+    "Throughput": 596.28
+  },
+  {
+    "Implementation": "Coarse-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 11.63
+  },
+  {
+    "Implementation": "Fine-Grained Locking",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 0.37
+  },
+  {
+    "Implementation": "Optimistic Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 226.87
+  },
+  {
+    "Implementation": "Lazy Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 494.83
+  },
+  {
+    "Implementation": "Non-Blocking Synchronization",
+    "MT_CONF": "0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63",
+    "Nthreads": 128,
+    "Runtime": 10,
+    "Size": 8192,
+    "Workload": "0/50/50",
+    "Throughput": 634.26
+  }
+]
