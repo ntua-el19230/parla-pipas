@@ -10,3 +10,4 @@ fw_sr
 fw_sr2
 x.*
 script.sh
+.clangd
