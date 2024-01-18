@@ -38,6 +38,7 @@ progs=(
 	kmeans_cuda_transpose
 	kmeans_cuda_shared
 	kmeans_cuda_all_gpu
+	kmeans_cuda_all_gpu_delta_reduction
 )
 
 for size in $sizes; do
@@ -57,6 +58,12 @@ for size in $sizes; do
 					elif [[ $prog == 'kmeans_cuda_shared' ]]; then
 						./${prog} -s $size -n $coord -c $center -l $loop_threashold -b $bs
 					elif [[ $prog == 'kmeans_cuda_all_gpu' ]]; then
+						./${prog} -s $size -n $coord -c $center -l $loop_threashold -b $bs
+					elif [[ $prog == 'kmeans_cuda_all_gpu_delta_reduction' ]]; then
+						./${prog} -s $size -n $coord -c $center -l $loop_threashold -b $bs
+					elif [[ $prog == 'kmeans_cuda_all_gpu_reduction' ]]; then
+						./${prog} -s $size -n $coord -c $center -l $loop_threashold -b $bs
+					elif [[ $prog == 'kmeans_cuda_gitman' ]]; then
 						./${prog} -s $size -n $coord -c $center -l $loop_threashold -b $bs
 					fi
 				done

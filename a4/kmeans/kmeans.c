@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <mpi.h>
+
 #include "kmeans.h"
 
 // square of Euclid distance between two multi-dimensional points
@@ -39,64 +41,74 @@ inline static int find_nearest_cluster(int     numClusters, /* no. clusters */
     return index;
 }
 
-void kmeans(double * objects,          /* in: [numObjs][numCoords] */
+void kmeans(double * objects,         /* in: [numObjs][numCoords] */
             int     numCoords,        /* no. coordinates */
             int     numObjs,          /* no. objects */
             int     numClusters,      /* no. clusters */
-            double   threshold,        /* minimum fraction of objects that change membership */
+            double   threshold,       /* minimum fraction of objects that change membership */
             long    loop_threshold,   /* maximum number of iterations */
             int   * membership,       /* out: [numObjs] */
-            double * clusters)         /* out: [numClusters][numCoords] */
+            double * clusters)        /* out: [numClusters][numCoords] */
 {
     int i, j;
     int index, loop=0;
-    double timing = wtime(), timing_internal, timer_min = 1e42, timer_max = 0;
+    double timing = 0;
 
-    double delta;          // fraction of objects whose clusters change in each loop 
-    int * newClusterSize; // [numClusters]: no. objects assigned in each new cluster 
-    double * newClusters;  // [numClusters][numCoords] 
-
-    printf("\n|-------------Sequential Kmeans-------------|\n\n");
+    /* Every variable has its "rank_" version, which is used to store local data,
+     * and its "new" version, which is used to store global data.
+     */
+    double rank_delta, delta = 0;                // fraction of objects whose clusters change in each loop 
+    int * rank_newClusterSize, * newClusterSize; // [numClusters]: no. objects assigned in each new cluster 
+    double * rank_newClusters, *newClusters;     // [numClusters][numCoords] 
+    
+    // Get rank of this process    
+    int rank;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
     // initialize membership
-    for (i=0; i<numObjs; i++) 
+    for (i=0; i<numObjs; i++)
         membership[i] = -1;
 
-    // initialize newClusterSize and newClusters to all 0 
-    newClusterSize = (typeof(newClusterSize)) calloc(numClusters, sizeof(*newClusterSize));
-    newClusters = (typeof(newClusters))  calloc(numClusters * numCoords, sizeof(*newClusters));
-  
-    timing = wtime() - timing;
-    printf("t_alloc: %lf ms\n\n", 1000*timing);
-    
-    timing = wtime(); 
+    // initialize rank_newClusterSize and rank_newClusters to all 0 
+    rank_newClusterSize = (typeof(rank_newClusterSize)) calloc(numClusters, sizeof(*rank_newClusterSize));
+    rank_newClusters    = (typeof(rank_newClusters))  calloc(numClusters * numCoords, sizeof(*rank_newClusters));
+    newClusterSize      = (typeof(newClusterSize)) calloc(numClusters, sizeof(*newClusterSize));
+    newClusters         = (typeof(newClusters))  calloc(numClusters * numCoords, sizeof(*newClusters));
+
+    timing = wtime();
     do {
-    	timing_internal = wtime(); 
         // before each loop, set cluster data to 0
         for (i=0; i<numClusters; i++) {
             for (j=0; j<numCoords; j++)
-                newClusters[i*numCoords + j] = 0.0;
-            newClusterSize[i] = 0;
+                rank_newClusters[i*numCoords + j] = 0.0;
+            rank_newClusterSize[i] = 0;
         }
 
-        delta = 0.0;
+        rank_delta = 0.0;
 
         for (i=0; i<numObjs; i++) {
             // find the array index of nearest cluster center 
             index = find_nearest_cluster(numClusters, numCoords, &objects[i*numCoords], clusters);
-
-            // if membership changes, increase delta by 1 
+            
+            // if membership changes, increase rank_delta by 1 
             if (membership[i] != index)
-                delta += 1.0;
+                rank_delta += 1.0;
+            
             // assign the membership to object i 
             membership[i] = index;
-
+            
             // update new cluster centers : sum of objects located within
-            newClusterSize[index]++;
+            rank_newClusterSize[index]++;
             for (j=0; j<numCoords; j++)
-                newClusters[index*numCoords + j] += objects[i*numCoords + j];
+                rank_newClusters[index*numCoords + j] += objects[i*numCoords + j];
         }
-        // average the sum and replace old cluster centers with newClusters 
+
+        /*
+         * TODO: Perform reduction of cluster data (rank_newClusters, rank_newClusterSize) from local arrays to shared.
+         */
+
+        
+        // average the sum and replace old cluster centers with newClusters
         for (i=0; i<numClusters; i++) {
             if (newClusterSize[i] > 0) {
                 for (j=0; j<numCoords; j++) {
@@ -104,35 +116,25 @@ void kmeans(double * objects,          /* in: [numObjs][numCoords] */
                 }
             }
         }
+        
+        /*
+         * TODO: Perform reduction from rank_delta variable to delta variable, that will be used for convergence check.
+         */
+
 
         // Get fraction of objects whose membership changed during this loop. This is used as a convergence criterion.
         delta /= numObjs;
-		//printf("delta is %f - ", delta);
+        
         loop++;
-        //printf("completed loop %d\n", loop);
+        //printf("\r\tcompleted loop %d", loop);
         //fflush(stdout);
-        // printf("\tcompleted loop %d\n", loop);
-        // for (i=0; i<numClusters; i++) {
-        //     printf("\tclusters[%ld] = ",i);
-        //     for (j=0; j<numCoords; j++)
-        //         printf("%6.6f ", clusters[i*numCoords + j]);
-        //     printf("\n");
-        // }
-        timing_internal = wtime() - timing_internal; 
-        if ( timing_internal < timer_min) timer_min = timing_internal; 
-        if ( timing_internal > timer_max) timer_max = timing_internal;         
     } while (delta > threshold && loop < loop_threshold);
+    
     timing = wtime() - timing;
-    printf("nloops = %d  : total = %lf ms\n\t-> t_loop_avg = %lf ms\n\t-> t_loop_min = %lf ms\n\t-> t_loop_max = %lf ms\n\n|-------------------------------------------|\n", 
-    	loop, 1000*timing, 1000*timing/loop, 1000*timer_min, 1000*timer_max);
-
-	char outfile_name[1024] = {0}; 
-	sprintf(outfile_name, "Execution_logs/Sz-%lu_Coo-%d_Cl-%d.csv", numObjs*numCoords*sizeof(double)/(1024*1024), numCoords, numClusters);
-	FILE* fp = fopen(outfile_name, "a+");
-	if(!fp){ printf("Filename %s did not open succesfully, no logging performed\n", outfile_name); exit(42); }
-	fprintf(fp, "%s,%d,%lf,%lf,%lf\n", "Sequential", -1, timing/loop, timer_min, timer_max);
-	fclose(fp); 
-	
+    if (rank == 0) fprintf(stdout, "        nloops = %3d   (total = %7.4fs)  (per loop = %7.4fs)\n", loop, timing, timing/loop);
+ 
+    free(rank_newClusters);
+    free(rank_newClusterSize);
     free(newClusters);
     free(newClusterSize);
 }

@@ -32,9 +32,9 @@ int main(int argc, char **argv)
 
     long    numClusters=0, numCoords=0, numObjs=0;
     int   * membership;    // [numObjs]
-    float * objects;       // [numObjs * numCoords] data  objects
-    float * clusters;      // [numClusters * numCoords] cluster center
-    float   dataset_size = 0, threshold;
+    double * objects;       // [numObjs * numCoords] data  objects
+    double * clusters;      // [numClusters * numCoords] cluster center
+    double   dataset_size = 0, threshold;
     long    loop_threshold;
     double  io_timing_read;
 
@@ -68,7 +68,7 @@ int main(int argc, char **argv)
     if (numClusters <= 1)
         usage(argv[0]);
 
-    numObjs = (dataset_size*1024*1024) / (numCoords*sizeof(float));
+    numObjs = (dataset_size*1024*1024) / (numCoords*sizeof(double));
 
     if (numObjs < numClusters) {
         printf("Error: number of clusters must be larger than the number of data points to be clustered.\n");
@@ -79,7 +79,7 @@ int main(int argc, char **argv)
     objects = dataset_generation(numObjs, numCoords);
 
     // Allocate space for clusters (coordinates of cluster centers)
-    clusters = (float*)  malloc(numClusters * numCoords * sizeof(float));
+    clusters = (double*)  malloc(numClusters * numCoords * sizeof(double));
 
     // The first numClusters elements are selected as initial centers
     for (i=0; i<numClusters; i++)

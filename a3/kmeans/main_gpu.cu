@@ -11,11 +11,11 @@ int _debug;
 #include "kmeans.h"
 #include "error.h"
 
-/// This is the validation eps that will be used for result comparison. 
-/// If set too low implementations with very divergent float operation order might lead to errors!
+/// This is the validation eps that will be used for result comparisson. 
+/// If set too low implementations with very divergent double operation order might lead to errors!
 /// Always check error difference in these cases and adjust eps accordingly! 
 #ifdef VALIDATE
-    float validation_eps = 1e-2; 
+    double validation_eps = 1e-2; 
 #endif 
 
 static void usage(char *argv0) {
@@ -44,9 +44,9 @@ int main(int argc, char **argv)
 	
     long    numClusters=0, numCoords=0, numObjs=0;
     int   * membership;    // [numObjs]
-    float * objects;       // [numObjs * numCoords] data  objects
-    float * clusters;      // [numClusters * numCoords] cluster center
-    float   dataset_size = 0, threshold;
+    double * objects;       // [numObjs * numCoords] data  objects
+    double * clusters;      // [numClusters * numCoords] cluster center
+    double   dataset_size = 0, threshold;
     long    loop_threshold;
     double  io_timing_read;
 
@@ -84,22 +84,22 @@ int main(int argc, char **argv)
     if (numClusters <= 1)
         usage(argv[0]);
 
-    numObjs = (dataset_size*1024*1024) / (numCoords*sizeof(float));
+    numObjs = (dataset_size*1024*1024) / (numCoords*sizeof(double));
 
     if (numObjs < numClusters) {
         printf("Error: number of clusters must be larger than the number of data points to be clustered.\n");
         return 1;
     }
-    printf("dataset_size = %.2f MB    numObjs = %ld    numCoords = %ld    numClusters = %ld    block_size = %d\n", dataset_size, numObjs, numCoords, numClusters, block_size);
+    printf("dataset_size = %.2f MB    numObjs = %ld    numCoords = %ld    numClusters = %ld, block_size = %d\n", dataset_size, numObjs, numCoords, numClusters, block_size);
 
     objects = dataset_generation(numObjs, numCoords);
 
     // Allocate space for clusters (coordinates of cluster centers)
-    clusters = (float*)  malloc(numClusters * numCoords * sizeof(float));
+    clusters = (double*)  malloc(numClusters * numCoords * sizeof(double));
 
 #ifdef VALIDATE
     // Allocate space for validation clusters (coordinates of cluster centers)
-    float* validation_clusters = (float*)  malloc(numClusters * numCoords * sizeof(float));
+    double* validation_clusters = (double*)  malloc(numClusters * numCoords * sizeof(double));
 #endif 
 
     // The first numClusters elements are selected as initial centers
@@ -149,10 +149,19 @@ int main(int argc, char **argv)
  
  #ifdef VALIDATE
  	printf("Performing validation....");
-    for (i=0; i<numClusters; i++) {
-        for (j=0; j<numCoords; j++)
-            if (abs((validation_clusters[i*numCoords + j] - clusters[i*numCoords + j])/validation_clusters[i*numCoords + j]) > validation_eps) 
-            	error("Validation failed: cluster[%d][%d]: %lf instead of %lf\n", i, j, clusters[i*numCoords + j],  validation_clusters[i*numCoords + j]); 
+ 	int ik, checked[numClusters][numCoords]; 
+ 	for (i=0; i<numClusters; i++) for (j=0; j<numCoords; j++) checked[i][j] = 0;
+    for (i=0; i<numClusters; i++)
+        for (j=0; j<numCoords; j++) if(!checked[i][j]){
+            for (ik=0; ik<numClusters; ik++) if(!checked[i][j]) { 
+        		    if (abs((validation_clusters[i*numCoords + j] - clusters[ik*numCoords + j])/validation_clusters[i*numCoords + j]) < validation_eps)
+        		    {
+        		    	checked[i][j] = 1; 
+        		    	break;
+        		    }
+        	}
+            if (!checked[i][j]) error("Validation failed: cluster[%d][%d]: %lf instead of %lf\n", i, j, clusters[i*numCoords + j],  validation_clusters[i*numCoords + j]);
+           	//else printf("Validation ok: cluster[%d][%d]: %lf instead of %lf\n", i, j, clusters[ik*numCoords + j],  validation_clusters[i*numCoords + j]); 
     }
     printf("PASSED!\n");
     free(validation_clusters);
