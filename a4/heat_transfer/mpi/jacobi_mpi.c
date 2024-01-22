@@ -263,21 +263,45 @@ int main(int argc, char ** argv) {
 		/*Add appropriate timers for computation*/
 
 
+        swap=u_previous;
+        u_previous=u_current;
+        u_current=swap;
+
+        gettimeofday(&tcs,NULL);
+
+        // jacobi
+
+        // send and recieve data needed for computation
+        if (north != MPI_PROC_NULL) {
+            MPI_Sendrecv(&u_previous[1][1],1,row,north,0,&u_previous[0][1],1,row,north,0,CART_COMM,MPI_STATUS_IGNORE);
+        }
+
+        if (south != MPI_PROC_NULL) {
+            MPI_Sendrecv(&u_previous[local[0]][1],1,row,south,0,&u_previous[local[0]+1][1],1,row,south,0,CART_COMM,MPI_STATUS_IGNORE);
+        }
+
+        if (east != MPI_PROC_NULL) {
+            MPI_Sendrecv(&u_previous[1][local[1]],1,column,east,0,&u_previous[1][local[1]+1],1,column,east,0,CART_COMM,MPI_STATUS_IGNORE);
+        }
+
+        if (west != MPI_PROC_NULL) {
+            MPI_Sendrecv(&u_previous[1][1],1,column,west,0,&u_previous[1][0],1,column,west,0,CART_COMM,MPI_STATUS_IGNORE);
+        }
+
+        // make sure every processor is ready to compute
+        MPI_Barrier(CART_COMM);
 
 
+        //compute
+        for (i=i_min;i<=i_max;i++) {
+            for (j=j_min;j<=j_max;j++) {
+                u_current[i][j]=(u_previous[i-1][j]+u_previous[i+1][j]+u_previous[i][j-1]+u_previous[i][j+1])/4.0;
+            }
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
+        gettimeofday(&tcf,NULL);
+        tcomp+=(tcf.tv_sec-tcs.tv_sec)+(tcf.tv_usec-tcs.tv_usec)*0.000001;
 
 
 
@@ -285,7 +309,7 @@ int main(int argc, char ** argv) {
         if (t%C==0) {
 			//*************TODO**************//
 			/*Test convergence*/
-
+            converged = converge(u_previous,u_current,i_min,i_max,j_min,j_max);
 
 		}
 		#endif
