@@ -94,7 +94,7 @@ int main(int argc, char **argv)
             for (j=0; j<numCoords; j++)
                 clusters[i*numCoords + j] = objects[i*numCoords + j];
 
-        // check initial cluster centers for repetition 
+        // check initial cluster centers for repetition
         if (check_repeated_clusters(numClusters, numCoords, clusters) == 0) {
             printf("Error: some initial clusters are repeated. Please select distinct initial centers\n");
             MPI_Finalize();
@@ -114,6 +114,7 @@ int main(int argc, char **argv)
     /*
      * TODO: Broadcast initial cluster positions to all ranks
      */
+    MPI_Bcast(clusters, numClusters*numCoords, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 
 
     // membership: the cluster id for each data object
@@ -121,13 +122,14 @@ int main(int argc, char **argv)
     tot_membership = (int*) malloc(numObjs * sizeof(int));
 
     // start the core computation
-    /* 
+    /*
      * TODO: Fix number of objects that this kmeans function call will process
      */
-    kmeans(objects, numCoords, numObjs, numClusters, threshold, loop_threshold, membership, clusters);
+    // kmeans(objects, numCoords, numObjs, numClusters, threshold, loop_threshold, membership, clusters);
+    kmeans(objects, numCoords, rank_numObjs, numClusters, threshold, loop_threshold, membership, clusters);
 
     /*
-    if (rank == 0) {    
+    if (rank == 0) {
         printf("Final cluster centers:\n");
         for (i=0; i<numClusters; i++) {
             printf("clusters[%ld] = ",i);
@@ -143,11 +145,11 @@ int main(int argc, char **argv)
     if (rank == 0) {
         /* TODO: Calculate recvcounts and displs, which will be used to gather data from each rank.
          * Hint: recvcounts: number of elements received from each rank
-         *       displs: displacement of each rank's data 
+         *       displs: displacement of each rank's data
          */
     }
 
-    /* 
+    /*
      * TODO: Broadcast the recvcounts and displs arrays to other ranks.
      */
 
@@ -160,7 +162,7 @@ int main(int argc, char **argv)
     if (_debug && rank == 0)
         for (i = 0; i < numObjs; ++i)
             fprintf(stderr, "%d\n", tot_membership[i]);
-    
+
     free(objects);
     free(membership);
     free(tot_membership);
