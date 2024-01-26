@@ -359,6 +359,7 @@ int main(int argc, char ** argv) {
 			//*************TODO**************//
 			/*Test convergence*/
             converged = converge(u_previous,u_current,i_min,i_max,j_min,j_max);
+            MPI_Allreduce(&converged,&global_converged,1,MPI_INT,MPI_LAND,MPI_COMM_WORLD);
 
 		}
 		#endif
