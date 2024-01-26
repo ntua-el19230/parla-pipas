@@ -160,14 +160,14 @@ int main(int argc, char ** argv) {
     MPI_Type_contiguous(local[1],MPI_DOUBLE,&row);
     MPI_Type_commit(&row);
 
-    double * north_send = (double *)malloc(local[1]*sizeof(double));
-    double * north_recv = (double *)malloc(local[1]*sizeof(double));
-    double * south_send = (double *)malloc(local[1]*sizeof(double));
-    double * south_recv = (double *)malloc(local[1]*sizeof(double));
-    double * east_send = (double *)malloc(local[0]*sizeof(double));
-    double * east_recv = (double *)malloc(local[0]*sizeof(double));
-    double * west_send = (double *)malloc(local[0]*sizeof(double));
-    double * west_recv = (double *)malloc(local[0]*sizeof(double));
+    // double * north_send = (double *)malloc(local[1]*sizeof(double));
+    // double * north_recv = (double *)malloc(local[1]*sizeof(double));
+    // double * south_send = (double *)malloc(local[1]*sizeof(double));
+    // double * south_recv = (double *)malloc(local[1]*sizeof(double));
+    // double * east_send = (double *)malloc(local[0]*sizeof(double));
+    // double * east_recv = (double *)malloc(local[0]*sizeof(double));
+    // double * west_send = (double *)malloc(local[0]*sizeof(double));
+    // double * west_recv = (double *)malloc(local[0]*sizeof(double));
 
 
 
@@ -215,8 +215,30 @@ int main(int argc, char ** argv) {
     j_min = 1;
     j_max = local[1];
 
-    /*Make sure you handle the cases where the process
-        has less/more rows/columns than the others*/
+
+    //boundary processes
+
+    //north
+    if (north == MPI_PROC_NULL) {
+        i_min = 2;
+    }
+
+    //south
+    if (south == MPI_PROC_NULL) {
+        int pad_i = global_padded[0] - global[0];
+        i_max = local[0]-1-pad_i;
+    }
+
+    //east
+    if (east == MPI_PROC_NULL) {
+        int pad_j = global_padded[1] - global[1];
+        j_max = local[1]-1-pad_j;
+    }
+
+    //west
+    if (west == MPI_PROC_NULL) {
+        j_min = 2;
+    }
 
 
 
@@ -272,21 +294,48 @@ int main(int argc, char ** argv) {
         // jacobi
 
         // send and recieve data needed for computation
+        // if (north != MPI_PROC_NULL) {
+        //     MPI_Sendrecv(&u_previous[1][1],1,row,north,0,&u_previous[0][1],1,row,north,0,CART_COMM,MPI_STATUS_IGNORE);
+        // }
+
+        // if (south != MPI_PROC_NULL) {
+        //     MPI_Sendrecv(&u_previous[local[0]][1],1,row,south,0,&u_previous[local[0]+1][1],1,row,south,0,CART_COMM,MPI_STATUS_IGNORE);
+        // }
+
+        // if (east != MPI_PROC_NULL) {
+        //     MPI_Sendrecv(&u_previous[1][local[1]],1,column,east,0,&u_previous[1][local[1]+1],1,column,east,0,CART_COMM,MPI_STATUS_IGNORE);
+        // }
+
+        // if (west != MPI_PROC_NULL) {
+        //     MPI_Sendrecv(&u_previous[1][1],1,column,west,0,&u_previous[1][0],1,column,west,0,CART_COMM,MPI_STATUS_IGNORE);
+        // }
+
+        // non blocking version
+        MPI_Request reqs[8];
+        MPI_Status stats[8];
+        int reqs_count = 0;
+
         if (north != MPI_PROC_NULL) {
-            MPI_Sendrecv(&u_previous[1][1],1,row,north,0,&u_previous[0][1],1,row,north,0,CART_COMM,MPI_STATUS_IGNORE);
+            MPI_Isend(&u_previous[1][1],1,row,north,0,CART_COMM,&reqs[reqs_count++]);
+            MPI_Irecv(&u_previous[0][1],1,row,north,0,CART_COMM,&reqs[reqs_count++]);
         }
 
         if (south != MPI_PROC_NULL) {
-            MPI_Sendrecv(&u_previous[local[0]][1],1,row,south,0,&u_previous[local[0]+1][1],1,row,south,0,CART_COMM,MPI_STATUS_IGNORE);
+            MPI_Isend(&u_previous[local[0]][1],1,row,south,0,CART_COMM,&reqs[reqs_count++]);
+            MPI_Irecv(&u_previous[local[0]+1][1],1,row,south,0,CART_COMM,&reqs[reqs_count++]);
         }
 
         if (east != MPI_PROC_NULL) {
-            MPI_Sendrecv(&u_previous[1][local[1]],1,column,east,0,&u_previous[1][local[1]+1],1,column,east,0,CART_COMM,MPI_STATUS_IGNORE);
+            MPI_Isend(&u_previous[1][local[1]],1,column,east,0,CART_COMM,&reqs[reqs_count++]);
+            MPI_Irecv(&u_previous[1][local[1]+1],1,column,east,0,CART_COMM,&reqs[reqs_count++]);
         }
 
         if (west != MPI_PROC_NULL) {
-            MPI_Sendrecv(&u_previous[1][1],1,column,west,0,&u_previous[1][0],1,column,west,0,CART_COMM,MPI_STATUS_IGNORE);
+            MPI_Isend(&u_previous[1][1],1,column,west,0,CART_COMM,&reqs[reqs_count++]);
+            MPI_Irecv(&u_previous[1][0],1,column,west,0,CART_COMM,&reqs[reqs_count++]);
         }
+
+        MPI_Waitall(reqs_count,reqs,stats);
 
         // make sure every processor is ready to compute
         MPI_Barrier(CART_COMM);
