@@ -289,7 +289,6 @@ int main(int argc, char ** argv) {
         u_previous=u_current;
         u_current=swap;
 
-        gettimeofday(&tcs,NULL);
 
         // jacobi
 
@@ -340,6 +339,7 @@ int main(int argc, char ** argv) {
         // make sure every processor is ready to compute
         MPI_Barrier(CART_COMM);
 
+        gettimeofday(&tcs,NULL);
 
         //compute
         for (i=i_min;i<=i_max;i++) {
