@@ -20,11 +20,31 @@
 
 ## Αλγόριθμος K-means
 ### Υλοποίηση Naive version
-1.Υλοποίηση κώδικα
+1. Υλοποίηση κώδικα
+  - Υλοποίηση υπορουτίνας `get_tid()`:
+```c
+__device__ int get_tid()
+{
+  return blockDim.x * blockIdx.x + threadIdx.x;
+}
+```
+  - Yλοποίηση υπορουτίνας `euclid_dist_2()` :
+```c
+__host__ __device__ inline static
+double euclid_dist_2()
+{
+  int i;
+  double ans=0.0;
 
-1.1:
- - Yλοποίηση του πυρήνα `find_nearest_cluster` :
- ```c 
+  for (i=0; i<numCoords; i++)
+    ans += (objects[objectId*numCoords + i] - clusters[clusterId*numCoords + i]) *
+           (objects[objectId*numCoords + i] - clusters[clusterId*numCoords + i]);
+
+  return(ans);
+}
+```
+  - Yλοποίηση του πυρήνα `find_nearest_cluster()` :
+```c
   __global__ static
 void find_nearest_cluster()
 {
@@ -44,7 +64,7 @@ void find_nearest_cluster()
             dist = euclid_dist_2(numCoords, numObjs, numClusters, objects, deviceClusters, tid, i);
 
             /* no need square root */
-            if (dist < min_dist) { 
+            if (dist < min_dist) {
             /* find the min and its array index*/
                 min_dist = dist;
                 index    = i;
@@ -58,156 +78,115 @@ void find_nearest_cluster()
         /* assign the deviceMembership to object objectId */
         deviceMembership[tid] = index;
     }}
-  ```
-  - Yλοποίηση υπορουτίνας `euclid_dist_2` :
- ```c 
-  __host__ __device__ inline static
-double euclid_dist_2()
-{
-    int i;
-    double ans=0.0;
+```
 
-    for (i=0; i<numCoords; i++)
-        ans += (objects[objectId*numCoords + i] - clusters[clusterId*numCoords + i]) *
-               (objects[objectId*numCoords + i] - clusters[clusterId*numCoords + i]);
-
-    return(ans);
-}
-  ```
-   - Υλοποίηση υπορουτίνας `get_tid`:
-  ```c 
-  __device__ int get_tid(){
-	return blockDim.x * blockIdx.x + threadIdx.x;
-}
-  ```
-
-1.2:
   - Πραγματοποιούμε  τις ζητούμενες μεταφορές δεδομένων σε κάθε iteration του αλγορίθμου:
-   ```c 
-   
-checkCuda(cudaMemcpy(deviceClusters, clusters,
-numClusters*numCoords*sizeof(double), cudaMemcpyHostToDevice));
+```c
+checkCuda(cudaMemcpy(deviceClusters, clusters, numClusters*numCoords*sizeof(double), cudaMemcpyHostToDevice));
 
-checkCuda(cudaMemset(dev_delta_ptr, 0, sizeof(double)));
+/* ... */
 
-		
-cudaDeviceSynchronize(); checkLastCudaError();
-		
-checkCuda(cudaMemcpy(membership, deviceMembership,
-    numObjs*sizeof(int), cudaMemcpyDeviceToHost));
+checkCuda(cudaMemcpy(membership, deviceMembership, numObjs*sizeof(int), cudaMemcpyDeviceToHost));
 
-checkCuda(cudaMemcpy(&delta, dev_delta_ptr,
-sizeof(double), cudaMemcpyDeviceToHost));
-  ```
+checkCuda(cudaMemcpy(&delta, dev_delta_ptr, sizeof(double), cudaMemcpyDeviceToHost));
+```
 
 
 
-2.Αξιολόγηση επίδοσης:
- 
- 2.1 Μετρήσεις:
-- Configuration:
-    - Size = 256
-    - Coords = 2
-    - Clusters = 16
-    - Loops = 10
+2. Αξιολόγηση επίδοσης:
 
-   <insert plots and comments >
+  - Γραφικές Παραστάσεις
+<img src='kmeans/plots/naive_2_16.png'>
+<img src='kmeans/plots/naive_2_16_speedup.png'>
 
-
-2.2 Σχολιασμός:
-
-   <insert  comments >
-
+sxolia gia tis metriseis...
 
 ### Υλοποίηση Transpose version
 
-1.Υλοποίηση κώδικα
+1. Υλοποίηση κώδικα
 
-1.1:
- - Yλοποίηση του πυρήνα `euclid_dist_2_transpose` :
- ```c 
-  __host__ __device__ inline static
+  - Yλοποίηση του πυρήνα `euclid_dist_2_transpose()` :
+```c
+__host__ __device__ inline static
 double euclid_dist_2_transpose()
 {
-    int i;
-    double ans=0.0;
+  int i;
+  double ans=0.0;
 
-    for (i=0; i<numCoords; i++) {
-        ans += (objects[i*numObjs + objectId] - clusters[i*numClusters + clusterId]) *
-               (objects[i*numObjs + objectId] - clusters[i*numClusters + clusterId]);
-    }
+  for (i=0; i<numCoords; i++) {
+    ans += (objects[i*numObjs + objectId] - clusters[i*numClusters + clusterId]) *
+           (objects[i*numObjs + objectId] - clusters[i*numClusters + clusterId]);
+  }
 
     return(ans);
 }
-  ```
-1.2:
- - Φροντίζουμε επίσης για την σωστή αρχικοποίηση και μετατροπή των δεδομένων:
-  ```c 
-double  **dimObjects = (double**) calloc_2d (numCoords, numObjs, sizeof(double)); 
-   
-double  **dimClusters = (double**) calloc_2d (numCoords, numClusters, sizeof(double)); 
-   
-double  **newClusters = (double**) calloc_2d (numCoords, numClusters, sizeof(double)); 
-  ```
+```
 
-  2.Αξιολόγηση επίδοσης:
- 
- 2.1 Μετρήσεις:
-- Configuration:
-    - Size = 256
-    - Coords = 2
-    - Clusters = 16
-    - Loops = 10
+  - Φροντίζουμε επίσης για την σωστή αρχικοποίηση και μετατροπή των δεδομένων:
+```c
+double  **dimObjects = (double**) calloc_2d (numCoords, numObjs, sizeof(double));
 
-   <insert plots and comments >
+double  **dimClusters = (double**) calloc_2d (numCoords, numClusters, sizeof(double));
 
-2.2 Σχολιασμός διαφοράς επίδοσης: 
+double  **newClusters = (double**) calloc_2d (numCoords, numClusters, sizeof(double));
 
+/* ... */
+
+for(i=0; i<numObjs; i++) {
+  for(j=0; j<numCoords; j++) {
+    dimObjects[j][i] = objects[i*numCoords + j];
+  }
+}
+
+/* ... */
+
+const unsigned int numClusterBlocks = (numObjs + numThreadsPerClusterBlock - 1) / numThreadsPerClusterBlock;
+
+/* ... */
+
+for(i=0; i<numClusters; i++) {
+  for(j=0; j<numCoords; j++) {
+    clusters[i*numCoords + j] = dimClusters[j][i];
+  }
+}
+```
+
+2. Αξιολόγηση επίδοσης:
+  - Γραφικές παραστάσεις
+<img src='kmeans/plots/naive_transpose_2_16.png'>
+<img src='kmeans/plots/naive_transpose_2_16_speedup.png'>
+
+σχολια πανω στις μετρισεις...
 
 ### Υλοποίηση Shared version
 
-1.Υλοποίηση κώδικα
+1. Υλοποίηση κώδικα
 
-1.1:
- - Ορίζουμε το μέγεθος της διαμοιραζόμενης μνήμης που χρειάζεται η συγκεκριμένη υλοποιήση:
- ```c 
+  - Ορίζουμε το μέγεθος της διαμοιραζόμενης μνήμης που χρειάζεται η συγκεκριμένη υλοποιήση:
+```c
 const unsigned int clusterBlockSharedDataSize = numClusters * numCoords * sizeof(double);
 ```
-1.2:
- - Προσθέτουμε στον πυρήνα `find_nearest_cluster` την μεταφορά των clusters στην διαμοιραζόμενη μνήμη:
-  ```c 
-  if (tid < numClusters*numCoords) {
-        shmemClusters[tid] = deviceClusters[tid];
-    }
-  ```
+  - Προσθέτουμε στον πυρήνα `find_nearest_cluster()` την μεταφορά των clusters στην διαμοιραζόμενη μνήμη:
+```c
+if (tid < numClusters*numCoords) {
+  shmemClusters[tid] = deviceClusters[tid];
+}
+
+__syncthreads();
+```
 
 
-2. Μετρήσεις και αξιολόγηση
-- Configuration:
-    - Size = 256
-    - Coords = 2
-    - Clusters = 16
-    - Loops = 10
+2. Αξιολόγηση επίδοσης
+  - Γραφικες Παραστάσεις
+<img src='kmeans/plots/naive_transpose_shared_2_16.png'>
+<img src='kmeans/plots/naive_transpose_shared_2_16_speedup.png'>
+
+σχολια πανω στις μετρισεις
 
 
 ### Σύγκριση υλοποίησεων / bottleneck Analysis
-1. <insert comments>
-2. 
-- Configuration:
-    - Size = 256
-    - Coords = 16
-    - Clusters = 16
-    - Loops = 10
-<insert comments>
+  - Γραφικές παραστάσεις
+<img src='kmeans/plots/naive_transpose_shared_16_16.png'>
+<img src='kmeans/plots/naive_transpose_shared_16_16_speedup.png'>
 
-
-
-  
-
-
-
-
-
- 
- 
-
+σχολια πανω στις μετρισεις
