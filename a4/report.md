@@ -20,13 +20,11 @@
 
 ## Αλγόριθμος K-means
 ### Μετρήσεις και αξιολόγηση
- - Configuration:
-    - Size = 256
-    - Coords = 16
-    - Clusters = 16
-    - Loops = 10
+  - Γραφικές Παραστάσεις
+<img src='kmeans/plots/kmeans_mpi_time.png'>
+<img src='kmeans/plots/kmeans_mpi_speedup.png'>
 
-<insert plots and comments>
+sxolia...
 
 ## Διάδοση θερμότητας σε δύο διαστάσεις
 

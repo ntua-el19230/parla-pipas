@@ -110,6 +110,7 @@ int main(int argc, char **argv)
         }
         */
     }
+    printf("Rank %d: numObjs = %ld\n", rank, rank_numObjs);
 
     /*
      * TODO: Broadcast initial cluster positions to all ranks
@@ -147,17 +148,22 @@ int main(int argc, char **argv)
          * Hint: recvcounts: number of elements received from each rank
          *       displs: displacement of each rank's data
          */
+        for(i=0; i<size; i++) {
+            recvcounts[i] = (i == size-1) ? numObjs - i*rank_numObjs : rank_numObjs;
+            displs[i] = i*rank_numObjs;
+        }
     }
 
     /*
      * TODO: Broadcast the recvcounts and displs arrays to other ranks.
      */
-
+    MPI_Bcast(recvcounts, size, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(displs, size, MPI_INT, 0, MPI_COMM_WORLD);
 
     /*
      * TODO: Gather membership information from every rank. (hint: each rank may send different number of objects)
      */
-
+    MPI_Gatherv(membership, rank_numObjs, MPI_INT, tot_membership, recvcounts, displs, MPI_INT, 0, MPI_COMM_WORLD);
 
     if (_debug && rank == 0)
         for (i = 0; i < numObjs; ++i)

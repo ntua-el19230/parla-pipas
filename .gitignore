@@ -11,3 +11,5 @@ fw_sr2
 x.*
 script.sh
 .clangd
+*.o
+kmeans_mpi
