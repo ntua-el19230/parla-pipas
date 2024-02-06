@@ -199,4 +199,4 @@ __syncthreads();
 <img src='kmeans/plots/naive_transpose_shared_16_16.png'>
 <img src='kmeans/plots/naive_transpose_shared_16_16_speedup.png'>
 
-Παρατηρούμε ότι η
+Η shared υλοποίηση σε αυτήν την περίπτωση δεν επιτυγχάνει καλύτερη επίδοση από την transpose. Όποτε η επιλογή της για αυθαίρετα configurations δεν είναι πάντα ιδανική.
