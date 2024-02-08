@@ -4,7 +4,7 @@
   <h3>ΕΘΝΙΚΟ ΜΕΤΣΟΒΙΟ ΠΟΛΥΤΕΧΝΙΟ</h3>
   <h4>ΣΧΟΛΗ ΗΛΕΚΤΡΟΛΟΓΩΝ ΜΗΧΑΝΙΚΩΝ ΚΑΙ ΜΗΧΑΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ</h4>
   <h5>Συστήματα Παράλληλης Επεξεργασίας</h5>
-  <h6>Άσκηση 4:Παραλληλοποίηση και βελτιστοποίηση αλγορίθμων σε αρχιτεκτονικές κατανεμημένης μνήμης </h6>
+  <h6>Άσκηση 4: Παραλληλοποίηση και βελτιστοποίηση αλγορίθμων σε αρχιτεκτονικές κατανεμημένης μνήμης </h6>
 </div>
 
 ---
@@ -35,7 +35,7 @@
 MPI_Scatterv(U[0],scattercounts,scatteroffset,global_block,&u_current[1][1],1,local_block,0,MPI_COMM_WORLD);
 zero2d(u_previous,local[0]+2,local[1]+2);
 ```
-- Ορισμός τύπο δεδομένων γραμμών-στηλών
+- Ορισμός τύπου δεδομένων γραμμών-στηλών
 ```c
 MPI_Datatype column;
 MPI_Type_vector(local[0],1,local[1]+2,MPI_DOUBLE,&dummy);
@@ -80,7 +80,7 @@ if (west == MPI_PROC_NULL) {
   j_min = 2;
 }
 ```
-- Κύριο loop. Αποστολή/παραλαβή δεδομένων προς/από γειτονεικούς επεξεργαστές και υπολογισμός
+- Κύριο loop. Αποστολή/παραλαβή δεδομένων προς/από γειτονικούς επεξεργαστές, και υπολογισμός
 ```c
 swap=u_previous;
 u_previous=u_current;
@@ -139,13 +139,17 @@ MPI_Gatherv(&u_current[1][1],1,local_block,U[0],scattercounts,scatteroffset,glob
 
 ### Μετρήσεις με έλεγχο σύγκλισης
 
-Ο χρόνος εκτέλεσης του προγράμματος για τη μέθοδο jacobi ήταν:
+Ο χρόνος εκτέλεσης του προγράμματος για τη μέθοδο Jacobi ήταν κατά μέσο όρο:
  - Total time: 517s
  - Computation time: 40s
 
 ### Μετρήσεις χωρίς έλεγχο σύγκλισης
 
-<add configuration ,plots ,comments>
+- Γραφικές Παραστάσεις
 
+<img src='heat_transfer/mpi/plots/heat_mpi_speedup.png'>
+<img src='heat_transfer/mpi/plots/heat_mpi_time_2048x2048.png'>
+<img src='heat_transfer/mpi/plots/heat_mpi_time_4096x4096.png'>
+<img src='heat_transfer/mpi/plots/heat_mpi_time_6144x6144.png'>
 
-
+Παρατηρούμε εν γένει μια βελτίωση στους χρόνους εκτέλεσης με την αύξηση των επεξεργαστών, ωστόσο η επίδοση παραμένει σταθερή μετά τους 8 επεξεργαστές για τα μεγαλύτερα μεγέθη πινάκων.
